@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Linux Setup Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header class="color-head"><h1>Linux Virtual Machine Setup Guide</h1><br>
+    </header>
+
+            <div class="toc">
+                <h2 id="toc">TABLE OF CONTENT</h2>
+                <ul>
+                    <li><a href="#1">1. Install VirtualBox</a></li>
+                    <li><a href="#2">2. Download Ubuntu Desktop</a></li>
+                    <li><a href="#3">3. Create New Ubuntu VM</a>
+                        <ul class="nested">
+                            <li><a href="#3.2">3.2 Name & Operating System</a></li>
+                            <li><a href="#3.3">3.3 Memory Size</a></li>
+                            <li><a href="#3.4">3.4 Virtual Hard Disk</a></li>
+                            <li><a href="#3.5">3.5 File Location & Size</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#4">4. Add Ubuntu Image</a>
+                        <ul class="nested2">
+                            <li><a href="#4.2">4.2 Image Location</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#5">5. Start VM</a></li>
+                    <li><a href="#6">6. Select Start-up Disk</a></li>
+                    <li><a href="#7">7. Install Ubuntu</a></li>
+                    <li><a href="#8">8. Updates and Software</a></li>
+                    <li><a href="#9">9. Installation Type</a></li>
+                    <li><a href="#10">10. Create User Account</a></li>
+                    <li><a href="#11">11. Remove Installation Medium</a></li>
+                    <li><a href="#12">12. Login</a></li>
+                    <li><a href="#13">13. Logged in Succesfully</a></li>
+                    <li><a href="#14">14. Unbutu Desktop Ready</a></li>
+                </ul>
+
+            </div>
+
+    <section class="color-light">
+        <div class="container">
+            <div class="info">
+                <div id="1">
+                    <h2> Step 1. Install Virtual Box</h2>
+                    <p>Download <a target="_blank" rel="noopener noreferrer" href="https://www.virtualbox.org/wiki/Downloads">VirtualBox </a> 
+                        for your operating system. For 
+                        this tutorial we will focus on Windows. 
+                        If you are on MacOS download OS X hosts. After downloading
+                        open the VirtualBox installer to finish installing.
+                    </p>
+                </div>
+                <div>
+                    <img src="imgs/step1.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="color-dark">
+        <div class="container">
+            <div class="info">
+                <div>
+                    <img src="imgs/step2.jpg">
+                </div>
+                <div id="2">
+                    <h2> Step 2. Download Ubuntu Desktop</h2>
+                    <p> Download <a target="_blank" rel="noopener noreferrer" href="https://ubuntu.com/download/desktop">Ubuntu Desktop</a>
+                        and make sure you know the location of this file.
+                    
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="color-light">
+        <div class="container">
+            <div class="info">
+                <div id="3">
+                    <h2> Step 3. Create Ubuntu VM </h2>
+                    <p>Open VirtualBox and click on New to create a new VM.
+                    </p>
+                </div>
+                <div>
+                    <img src="imgs/step3.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="color-dark">
+        <div class="container">
+            <div class="info">
+                <div>
+                    <img src="imgs/step3_2.jpg">
+                </div>
+                <div id="3.2">
+                    <h2> Step 3.2 Name and Operating System </h2>
+                    <p> Give your VM a name. Make sure type is Linux and
+                        version is Ubuntu (64-bit).    
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="color-light">
+        <div class="container">
+            <div class="info">
+                <div id="3.3">
+                    <h2> Step 3.3 Memory Size</h2>
+                    <p> VM requires memory. Give at least 2GB (2048 MB).
+                    </p>
+                </div>
+                <div>
+                    <img src="imgs/step3_3.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="color-dark">
+        <div class="container">
+            <div class="info">
+                <div>
+                    <img src="imgs/step3_4.jpg">
+                </div>
+                <div id="3.4">
+                    <h2> Step 3.4 Virtual Hard Disk </h2>
+                    <p> Select create a virtual hard disk now and hit create.
+                        Next select VDI (VirtualBox Disk Image). Then 
+                        select Dynamically allocated.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="color-light">
+        <div class="container">
+            <div class="info">
+                <div id="3.5">
+                    <h2> Step 3.5 File Location and Size</h2>
+                    <p> You can change your file location if you want.
+                        Give at least 15 GB for the size. Then hit create.
+                    </p>
+                </div>
+                <div>
+                    <img src="imgs/step3_5.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="color-dark">
+        <div class="container">
+            <div class="info">
+                <div>
+                    <img src="imgs/step4.jpg">
+                </div>
+                <div id="4">
+                    <h2> Step 4. Add Ubuntu Image to VM </h2>
+                    <p> From the previous step a Ubuntu VM should be created with the name you
+                        provided in <a href="#3.2"> step 3.2</a>. 
+                        Select it and click the settings button.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="color-light">
+        <div class="container">
+            <div class="info">
+                <div id="4.2">
+                    <h2> Step 4.2 Image Location</h2>
+                    <p> 1. Click on Storage <br>
+                        2. Click on Add optical drive <br>
+                        3. Click Add <br>
+                        4. Go to the location of the file from <a href="#2">step 2</a>
+                            and open.<br>
+                        5. Click Choose
+                    </p>
+                </div>
+                <div>
+                    <img src="imgs/step4_222.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="color-dark">
+        <div class="container">
+            <div class="info">
+                <div>
+                    <img src="imgs/step5.jpg">
+                </div>
+                <div id="5">
+                    <h2> Step 5. Start VM </h2>
+                    <p> Make sure your VM is selected and hit the Start button to start the VM.
+                        A new window should appear.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="color-light">
+        <div class="container">
+            <div class="info">
+                <div id="6">
+                    <h2> Step 6. Select Start-up Disk</h2>
+                    <p> Make sure to select the virtual optical disk file you added
+                        in <a href="#4.2"> step 4.2</a> If the image is not there 
+                        click on the folder and select the disk file.
+                    </p>
+                </div>
+                <div>
+                    <img src="imgs/step6.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="color-dark">
+        <div class="container">
+            <div class="info">
+                <div>
+                    <img src="imgs/step7.jpg">
+                </div>
+                <div id="7">
+                    <h2> Step 7. Install Ubuntu </h2>
+                    <p> Select your lanauge and click Install Ubuntu. Next select 
+                        your keyboard layout hit continue.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="color-light">
+        <div class="container">
+            <div class="info">
+                <div id="8">
+                    <h2> Step 8. Updates and Software</h2>
+                    <p> Keep default. If you want to save storage then
+                        select Minimal Installation. Click continue.
+                    </p>
+                </div>
+                <div>
+                    <img src="imgs/step8.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="color-dark">
+        <div class="container">
+            <div class="info">
+                <div>
+                    <img src="imgs/step9.jpg">
+                </div>
+                <div id="9">
+                    <h2> Step 9. Installation Type </h2>
+                    <p> Erase disk and install Ubuntu should be selected. If 
+                        not select it and hit Install. A window should popup
+                        ignore the warning and click continue. Then select your
+                        timezone and hit continue.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="color-light">
+        <div class="container">
+            <div class="info">
+                <div id="10">
+                    <h2> Step 10. Create User Account</h2>
+                    <p> Give your computer a name and password. Then click 
+                        continue. The installation process will take 5-10
+                        minutes depending on your computer. After installation is done
+                        a window will popup. Click on Restart Now.
+                    </p>
+                </div>
+                <div>
+                    <img src="imgs/step10.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="color-dark">
+        <div class="container">
+            <div class="info">
+                <div>
+                    <img src="imgs/step11.jpg">
+                </div>
+                <div id="11">
+                    <h2> Step 11. Remove Installation Medium </h2>
+                    <p> Ignore this message and press ENTER on your keyboard.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="color-light">
+        <div class="container">
+            <div class="info">
+                <div id="12">
+                    <h2> Step 12. Login</h2>
+                    <p> After Ubuntu restarts. You should be in the Login
+                        screen and see your user account. Click on it and 
+                        enter the password you created in <a href="#10">step 10.</a> 
+                        Then press ENTER.
+                    </p>
+                </div>
+                <div>
+                    <img src="imgs/step12.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="color-dark">
+        <div class="container">
+            <div class="info">
+                <div>
+                    <img src="imgs/step13.jpg">
+                </div>
+                <div id="13">
+                    <h2> Step 13. Logged in Succesfully </h2>
+                    <p> If you entered your password correctly then you should
+                        be logged in. You can connect your accounts if you want
+                        otherwise hit skip and keep hitting next unless you 
+                        want to change default settings.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="color-light">
+        <div class="container">
+            <div class="info">
+                <div id="14">
+                    <h2> Step 14. Unbutu Desktop Ready</h2>
+                    <p> You have created your own Linux Ubuntu 
+                        Virtual Machine (a computer within a computer).
+                    </p>
+                </div>
+                <div>
+                    <img src="imgs/step14.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <a class="top" href="#toc" title="Go top"><i></i></a>
+ 
+</body>
+</html>

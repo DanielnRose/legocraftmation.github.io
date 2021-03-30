@@ -1,0 +1,150 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 1rem;
+    margin: 0;
+    overflow-x: hidden;
+    animation: pageFade 2s forwards;
+}
+@-webkit-keyframes pageFade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-moz-keyframes pageFade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-o-keyframes pageFade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes pageFade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+.color-head {
+    background-color:antiquewhite;
+}
+.color-light{
+    color: #fff;
+    background-color: rgb(148, 86, 115);
+}
+.color-dark{
+    color: #fff;
+    background-color: #333;
+}
+
+header,
+section {
+    padding: 3rem 0;
+}
+
+@media (min-width: 40em){
+    header, section{
+        padding: 7rem 0;
+    }
+}
+header {
+    padding-bottom: 20rem;
+}
+
+header h1 {
+    text-align: center;
+    color: black;
+    padding-top: 15rem;
+}
+
+.toc {
+    background: #333 none repeat scroll 0 0;
+    border: 1px solid #a164a1;
+    padding: 20px;
+}
+
+.toc h2 {
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.toc ul{
+    list-style: none;
+    display: table;
+    margin: 0 auto;
+}
+
+.toc ul li{
+    margin-bottom: 20px;
+}
+.toc ul li a{
+    color: #fff;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+.nested li{
+    margin-top: 20px;
+}
+.nested2 li{
+    margin-top: 20px;
+    margin-right: 97px;
+}
+h1, h2, p{
+    margin-bottom: 1em;
+}
+
+.container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.info p{
+    font-size: 1.3rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(78, 179, 95);
+}
+
+/* if bigger than 40em then put in row.
+    bascially content doesn't look trash
+*/
+@media (min-width: 40em){
+    .info {
+        flex-direction: row;
+    }
+    .info > * {
+        flex-basis: 100%;
+    }
+    /* space bewtween columns*/
+    .info > * + * {
+        margin-left: 2em;
+    }
+}
+
+img {
+    max-width: 700px;
+    display: block;
+
+}
+
+.top{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #ffffff;
+    bottom: 40px;
+    right: 100px;
+    z-index: 2;
+}
+
+.top:hover{
+    background-color: #af9a3a;
+}
