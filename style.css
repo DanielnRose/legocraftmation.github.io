@@ -139,12 +139,28 @@ img {
     position: fixed;
     width: 50px;
     height: 50px;
-    background: #ffffff;
+    background: #fff;
     bottom: 40px;
     right: 100px;
     z-index: 2;
+    border-radius: 50%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
 }
 
+.top i{
+    color: black;
+    font-weight: 1000;
+    font-size: 55px;
+    text-align: center;
+    padding-left: 8px;
+}
+
+.top.active {
+    visibility: visible;
+    opacity: 1;
+}
 .top:hover{
-    background-color: #af9a3a;
+    background-color: #dbd8ca;
 }
