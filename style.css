@@ -43,39 +43,45 @@ section {
 
 @media (min-width: 40em){
     header, section{
-        padding: 5rem 0;
+        padding: 1rem 0;
     }
 }
 header {
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
 }
 
 header h1 {
     text-align: center;
     color: black;
-    padding-top: 5rem;
+    padding-top: 1rem;
 }
 
 .toc {
     background: #333 none repeat scroll 0 0;
     border: 1px solid #a164a1;
     padding: 20px;
+	    text-align: center;
+
 }
 
 .toc h2 {
+	
     font-weight: 700;
+	
     text-align: center;
     color: #fff;
     margin-bottom: 20px;
 }
 .toc ul{
+
     list-style: none;
-    display: table;
+    display: inline;
     margin: 0 auto;
 }
 
 .toc ul li{
-    margin-bottom: 20px;
+    margin-bottom: 3px;
+	text-align: center;
 }
 .toc ul li a{
     color: #fff;
